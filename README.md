@@ -6,7 +6,7 @@ It is react native submission project
 
 ## Installation $ Execute
 
-open prject folder and running below command on CMD
+open project folder and running below command on CMD
 
 ```sh
 $ npm install 
