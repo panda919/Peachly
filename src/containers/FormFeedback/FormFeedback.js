@@ -15,21 +15,22 @@ class FormFeedback extends Component {
     validate = values => {
         const errors = {};
 
-        if (!values.firstName) {
-            errors.firstName = ['First Name is required.'];
+        if (!values.first) {
+            errors.first = ['First Name is required.'];
         }
-        if (!values.lastName) {
-            errors.lastName = ['Last Name is required.'];
+
+        if (!values.last) {
+            errors.last = ['Last Name is required.'];
         }
+
         if (!values.email) {
             errors.email = ['Email is required.'];
         }
-
-        if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-            errors.email = ['Invalid email address'];
-        }
         if (!values.message) {
             errors.message = ['Message is required.'];
+        }
+        if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+            errors.email = ['Invalid email address'];
         }
 
         return errors;
@@ -46,7 +47,7 @@ class FormFeedback extends Component {
                         <View style={styles.form}>
                             <View style={styles.row}>
                                 <Field
-                                    name="firstName"
+                                    name="first"
                                     component={FormTextInput}
                                     placeholder="First Name"
                                     customStyles={styles.input}
@@ -55,7 +56,7 @@ class FormFeedback extends Component {
                             </View>
                             <View style={{ marginBottom: 10 }}>
                                 <Field
-                                    name="lastName"
+                                    name="last"
                                     component={FormTextInput}
                                     placeholder="Last Name"
                                     customStyles={styles.input}

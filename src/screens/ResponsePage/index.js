@@ -61,11 +61,11 @@ class ResponsePage extends Component {
                         <View style={styles.contentView}>
                             <Text style={styles.responseTxt}>
                                 {'First Name: '}
-                                {feedback.firstName ? feedback.firstName : 'invaild'}
+                                {feedback.first ? feedback.first : 'invaild'}
                             </Text>
                             <Text style={styles.responseTxt}>
                                 {'Last Name: '}
-                                {feedback.lastName ? feedback.lastName : 'invaild'}
+                                {feedback.last ? feedback.last : 'invaild'}
                             </Text>
                             <Text style={styles.responseTxt}>
                                 {'Email: '}

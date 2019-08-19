@@ -23,8 +23,8 @@ import * as globals from '../../utils/global';
 import { sendFeedback } from '../../reducers/feedbackReducer';
 import { getFeedback, getSubmittingState, getSubmitError } from '../../selectors';
 const initFeedback = {
-    firstName: null,
-    lastName: null,
+    first: null,
+    last: null,
     email: null,
     message: null,
 };
