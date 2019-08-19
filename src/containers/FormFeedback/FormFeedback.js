@@ -67,7 +67,7 @@ class FormFeedback extends Component {
                                 <Field
                                     name="email"
                                     component={FormTextInput}
-                                    placeholder="Email"
+                                    placeholder="John@example.com"
                                     customStyles={styles.input}
                                     wrapperStyles={styles.wrapper}
                                 />
